@@ -1,0 +1,22 @@
+﻿<Window x:Class="lab5.CalculateDurationDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Calculate Duration" Height="216" Width="250">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Start Date:"/>
+            <DatePicker Name="startDatePicker" Margin="0,0,0,10"/>
+
+            <TextBlock Text="End Date:"/>
+            <DatePicker Name="endDatePicker" Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="OK" Width="80" Margin="0,0,10,0" Click="OKButton_Click"/>
+                <Button Content="Cancel" Width="80" Click="CancelButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
